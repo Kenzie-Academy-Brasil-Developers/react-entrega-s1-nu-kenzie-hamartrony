@@ -1,6 +1,6 @@
 form{
     width: 330px;
-    height: 250px;
+    height: 200px;
 
     background: #FFFFFF;
     box-shadow: 0px 4px 32px -12px rgba(0, 0, 0, 0.25);
@@ -18,7 +18,7 @@ form label{
     font-size: 12px;
     line-height: 22px;
     color: #212529;
-    margin: 5px 0px 5px 15px; 
+    margin: 0px 0px 5px 15px; 
 
     align-self: flex-start;
 
@@ -28,7 +28,7 @@ form label{
 
 .input_desc{
     width: 300px;
-    height: 52px;
+    height: 35px;
     margin-left: 15px;
     
 
@@ -78,14 +78,14 @@ form span{
 
 .input_preco{
     width: 128px;
-    height: 40px;
+    height: 35px;
     background: #F8F9FA;
 
     border: 2px solid #F8F9FA;
     box-sizing: border-box;
     border-radius: 8px;
     margin-left: 15px;
-    margin-top: 30px;
+    margin-top: 25px;
     text-align: right;
 
 }
@@ -99,9 +99,9 @@ form span{
 
 form select{
     width: 135px;
-    height: 40px;
+    height: 35px;
     margin-left: 36px;
-    margin-top: 30px;
+    margin-top: 25px;
 
     background: #F8F9FA;
    
@@ -121,8 +121,8 @@ form select{
 
 form button{
     width: 300px;
-    height: 48px;
-    margin-top: 15px;
+    height: 35px;
+    margin-top: 5px;
     align-self: center;
 
     background: #FD377E;
@@ -133,14 +133,16 @@ form button{
 
 
     font-family: Inter;
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 19px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
 
-color: #FFFFFF;
+    color: #FFFFFF;
 
 }
+
+
 
 
 

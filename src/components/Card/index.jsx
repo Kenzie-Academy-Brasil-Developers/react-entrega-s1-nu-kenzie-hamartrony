@@ -1,12 +1,18 @@
-function Card({transaction, index}){
-    console.log(transaction)
+import './style_card.css'
+import trash from '../../images/trash-solid.svg'
+import {FaTrash} from 'react-icons/fa'
+
+
+function Card({transaction, name, listTransactoins, delItem}){
+ 
+
 
 
     return(
-        <div>
+        <div className='card'>
             <h2>{transaction.description}</h2>
-            <span>{transaction.value}</span>
-            <button></button>
+            <span>R$ {transaction.value}</span>
+            <button onClick={() => delItem(name)} ><FaTrash/></button>
             <p>{transaction.type}</p>
         </div>
 

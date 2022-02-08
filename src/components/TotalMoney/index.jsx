@@ -1,8 +1,26 @@
-function TotalMoney({state, listTransactoins}){
+import "./style_total.css"
+
+
+function TotalMoney({listTransactoins}){
+
+     const entr  = listTransactoins.filter(item => item.type === "entrada") 
+     const saida = listTransactoins.filter(item => item.type === "saida") 
+     
+        
+
+
+    const totalEntradas = entr.reduce((acum, atual) => acum + Number(atual.value), 0)
+    const totalSaidas   = saida.reduce((acum, atual) => acum + Number(atual.value), 0)
+    const total = totalEntradas - totalSaidas 
 
 
     return(
-        {listTransactoins.reduce()}
-
+        <div className="total">
+            <p>Valor Total:</p>
+            <p>R$ {total}</p>
+        </div>
     )
 }
+
+
+export default TotalMoney
