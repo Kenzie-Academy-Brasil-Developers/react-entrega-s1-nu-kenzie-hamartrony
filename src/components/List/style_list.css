@@ -13,7 +13,7 @@
     margin-top: 10px;
     
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     
 }
 
@@ -24,7 +24,7 @@
     font-size: 13px;
     line-height: 30px;
     
-    color: #212529;
+    color: #E9ECEF;
     
  
 }
@@ -36,13 +36,13 @@
     border: none;
     box-sizing: border-box;
     border-radius: 8px;
-    margin-right: -45px;
     font-family: Nunito;
 
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 19px;
+   
 
 
     text-align: center;
@@ -66,7 +66,6 @@
     border: 1.4px solid #E9ECEF;
     box-sizing: border-box;
     border-radius: 8px;
-    margin-right: -45px;
 
     font-family: Nunito;
     font-style: normal;
@@ -74,6 +73,7 @@
     font-size: 14px;
     line-height: 19px;
     text-align: center;
+    
 
     color: #868E96;
 
@@ -94,6 +94,51 @@
 
 }
 
+
+.vazio{
+    margin-top: 45px;
+    width: 300px;
+    height: 87px;
+    background-color: #F8F9FA;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-left:4px #E9ECEF solid;
+    border-radius: 4px;
+
+}
+
+.vazio div{
+    background-color: #E9ECEF;
+    width:130px;
+    height: 13px;
+    margin-left: 10px;
+
+}
+
+.vazio :last-child{
+    background-color:#E9ECEF;
+    width:76px;
+    height: 13px;
+    margin-left: 10px;
+}
+
+
+.vazio_p{
+    position: absolute;
+    width: 240px;
+    height: 34px;
+
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 34px;
+    color: #868E96;
+    align-self: flex-start;
+    flex-grow: 1;
+    margin:none;
+}
 
 
 

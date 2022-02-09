@@ -68,7 +68,8 @@ body{
   height: 100%;
 }
 .home{
-  margin-top: 150px;
+  margin-top: 10px;
+  margin-left: 50px;
   width: 425px;
   
     display: flex;
@@ -156,6 +157,9 @@ body{
   width: 593px ;
   height: 593px;
   display: flex;
+  margin-left: -70px;
+
+
   
 }
 
@@ -421,6 +425,7 @@ body{
 
   .home{
     margin-top: 150px;
+    margin-left: 0px;
     width: auto;
     
       display: flex;
@@ -428,6 +433,10 @@ body{
   
    
       
+  }
+
+  .figura{
+    margin-left: 0px;
   }
 
 
