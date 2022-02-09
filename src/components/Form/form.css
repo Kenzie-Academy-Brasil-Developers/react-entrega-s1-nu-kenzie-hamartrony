@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Nunito&display=swap');
+
 form{
     width: 330px;
     height: 200px;
@@ -43,6 +45,15 @@ form label{
     border: 2px solid #F8F9FA;
     box-sizing: border-box;
     border-radius: 8px;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: black;
+
+    
 
 }
 
@@ -119,6 +130,8 @@ form select{
     color: #868E96;
 }
 
+
+
 form button{
     width: 300px;
     height: 35px;
@@ -143,6 +156,56 @@ form button{
 }
 
 
+@media (min-width: 600px){
+
+    form{
+        position: inherit;
+        align-self: flex-start;
+        margin-left: 10%;
+        width: 363px;
+        height: 351px;
+    }
+
+    .input_desc{
+        width: 314px;
+        height: 52.8px;
+        margin-top: 12px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 4px ;
+    }
+
+    form label{
+        margin: 38px 0px 0px 26px;
+    }
+
+    form span{
+        margin-left: 24px;
+        margin-bottom: 17.7px;
+    }
+
+  .input_preco{
+      height: 48px;
+  }
+
+  form select{
+      height: 48px;
+  }
+
+  form button{
+      margin-top:19px ;
+      width: 314px;
+      height: 48px;
+  }
 
 
+}
+
+
+@media (min-width: 1400px){
+    form {
+        margin-left: 17%;
+    }
+
+}
 

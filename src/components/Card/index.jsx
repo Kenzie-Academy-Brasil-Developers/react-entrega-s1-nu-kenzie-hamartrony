@@ -1,21 +1,33 @@
 import './style_card.css'
-import trash from '../../images/trash-solid.svg'
 import {FaTrash} from 'react-icons/fa'
+import {useRef, useState} from 'react'
 
 
 function Card({transaction, name, listTransactoins, delItem}){
+
  
 
 
 
     return(
-        <div className='card'>
+        <>
+        {transaction.type === 'entrada' ? (
+            < div className='card card_green'>
             <h2>{transaction.description}</h2>
             <span>R$ {transaction.value}</span>
             <button onClick={() => delItem(name)} ><FaTrash/></button>
             <p>{transaction.type}</p>
         </div>
-
+        ):
+        (
+            <div  className='card card_gray'>
+            <h2>{transaction.description}</h2>
+            <span>R$ {transaction.value}</span>
+            <button onClick={() => delItem(name)} ><FaTrash/></button>
+            <p>{transaction.type}</p>
+        </div>
+        )}
+        </>
     )
 
 

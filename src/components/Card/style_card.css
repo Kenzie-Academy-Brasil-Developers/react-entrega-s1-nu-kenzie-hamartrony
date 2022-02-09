@@ -1,5 +1,12 @@
+.itens{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+    height: 60%;
+}
 .card{
-    width: 100%;
+    width: 95%;
     height: 50px;
     margin-top: 10px;
     display: flex;
@@ -58,17 +65,24 @@
     border: 1px solid #E9ECEF;
     box-sizing: border-box;
     padding: 0px;
+    color: #868E96;
 
     
 
 }
 
-.card button img{
-    width: 10px;
-    align-self:center ;
-  
 
 
+
+
+.card button:hover{
+    background: #868E96 ;
+    color: #E9ECEF ;
+}
+
+.card button:active{
+    background: #E9ECEF;
+    color: #868E96;
 }
 
 
@@ -86,4 +100,50 @@
     margin-left: 5px;
 
 }
+
+
+.card_gray{
+    border-left: 4px #E9ECEF solid;
+    border-radius: 4px 0px 0px 4px;
+ }
+
+ .card_green{
+    border-left: 4px #03B898 solid;
+    border-radius: 4px 0px 0px 4px;
+ }
+
+
+@media (min-width: 600px){
+    .itens{
+        margin-left: 3px;
+        height: auto;
+        overflow: auto;
+    }
+    .card{
+        width: 560px;
+        height: 87px;
+    }
+
+    .card h2{
+        padding: 5px;
+    }
+
+    .card p{
+        padding: 5px;
+        
+    }
+
+    .card button{
+        width: 22px;
+        height: 22px;
+    }
+
+
+
+
+
+
+}
+
+
 

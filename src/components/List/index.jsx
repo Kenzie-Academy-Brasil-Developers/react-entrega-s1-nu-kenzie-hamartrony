@@ -33,9 +33,30 @@ function List({listTransactoins, setFiltrados, filtrados, setListTransactions}){
                 <button onClick={() => filtroType('saida')}   type='button' className="class class2">Despesas</button>
             </div>
             <div className="itens">
+            {filtrados.length < 1 ? ( 
+                <>
+                    <p className="vazio_p">Você ainda não possui nenhum lançamento</p>
+                    <div className="vazio"> 
+                        <div></div>
+                        <div></div>                    
+                    </div>
+                    <div className="vazio"> 
+                        <div></div>
+                        <div></div>                    
+                    </div>
+                    <div className="vazio"> 
+                        <div></div>
+                        <div></div>                    
+                    </div>
+                </>
+
+            ):
+            (
+                filtrados.map((transaction, index) => 
+                <Card transaction={transaction} name={index} key={index} delItem={delItem}></Card>)
+
+            )}
             
-            {filtrados.map((transaction, index) => 
-            <Card transaction={transaction} name={index} key={index} delItem={delItem}></Card>)}
             
             </div>
 
