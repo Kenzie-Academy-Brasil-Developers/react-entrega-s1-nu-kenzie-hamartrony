@@ -69,6 +69,13 @@ body{
 }
 .home{
   margin-top: 150px;
+  width: 425px;
+  
+    display: flex;
+    flex-direction: column;
+    
+
+ 
     
 }
 
@@ -141,10 +148,7 @@ body{
 }
 
 
-.home{
-  display: flex;
-  flex-direction: row;
-}
+
 
 
 /* circulos ##################################################################### */
@@ -413,6 +417,17 @@ body{
   header button{
     margin-right: 10%;
     height: 40px;
+  }
+
+  .home{
+    margin-top: 150px;
+    width: auto;
+    
+      display: flex;
+      flex-direction: row;
+  
+   
+      
   }
 
 
