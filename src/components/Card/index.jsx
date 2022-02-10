@@ -1,6 +1,6 @@
 import './style_card.css'
 import {FaTrash} from 'react-icons/fa'
-import {useRef, useState} from 'react'
+
 
 
 function Card({transaction, name, listTransactoins, delItem}){

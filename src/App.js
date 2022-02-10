@@ -13,8 +13,7 @@ import {CgBox} from 'react-icons/cg'
 function App() {
  
   const [listTransactoins, setListTransactions] = useState([            // lista
-    { description: "Salário recebido", type: "entrada", value: 2500 },
-    { description: "Conta de luz", type: "saida", value: 150 },
+ 
   ])
 
   const [filtrados, setFiltrados] = useState(listTransactoins)          // filtros

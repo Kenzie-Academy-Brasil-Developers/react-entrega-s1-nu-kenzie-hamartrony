@@ -12,8 +12,8 @@ function List({listTransactoins, setFiltrados, filtrados, setListTransactions}){
     }
 
     // FUNCAO DELETAR
-    function delItem(name){
-        const deleta = filtrados.filter(item => filtrados.indexOf(item) !== name)
+    function delItem(id){
+        const deleta = listTransactoins.filter(item => item.id !== id)
         setFiltrados(deleta)
         setListTransactions(deleta)
        
@@ -53,7 +53,7 @@ function List({listTransactoins, setFiltrados, filtrados, setListTransactions}){
             ):
             (
                 filtrados.map((transaction, index) => 
-                <Card transaction={transaction} name={index} key={index} delItem={delItem}></Card>)
+                <Card transaction={transaction} name={transaction.id} key={index} delItem={delItem}></Card>)
 
             )}
             

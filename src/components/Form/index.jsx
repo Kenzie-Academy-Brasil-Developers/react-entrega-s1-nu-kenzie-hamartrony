@@ -5,7 +5,8 @@ function Form ({setListTransactions,listTransactoins, setFiltrados, filtrados}){
 
 
 
-    const [conta, setConta] = useState({description:'',type:'', value:''})
+    const [conta, setConta] = useState({description:'',type:'', value:'', id:0})
+    const [cont, setCont] = useState(1)
     
     const change = e => {
         const {name, value} = e.target
@@ -23,9 +24,10 @@ function Form ({setListTransactions,listTransactoins, setFiltrados, filtrados}){
 
 
 
-    function addConta (conta){           
+    function addConta (conta){         
         setListTransactions ([...listTransactoins, conta])
         setFiltrados([...filtrados, conta])
+        console.log(listTransactoins)
         
     }
 
@@ -52,7 +54,7 @@ function Form ({setListTransactions,listTransactoins, setFiltrados, filtrados}){
                 <option value="saida">Saida</option>
             </select>
             </div>
-            <button onClick={() => addConta(conta)} type='button'>Inserir Valor</button>
+            <button onClick={() => {setConta({...conta, id:cont}); addConta(conta); setCont(cont + 1)}} type='button'>Inserir Valor</button>
 
         </form>
 
